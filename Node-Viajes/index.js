@@ -16,3 +16,10 @@ app.use('/api/empresa', adminRoutes)  //Ruta por la que vamos a acceder a nuestr
 app.listen(PORT, () => {
     console.log('Service is running ' +  PORT)
 }) //Correr nuestro server en el puerto que indicamos en la variable PORT
+
+//motor de plantillas
+app.set('view engine','ejs');
+app.set('views',__dirname + '/views');
+
+
+app.use(express.static(__dirname + "/public"))

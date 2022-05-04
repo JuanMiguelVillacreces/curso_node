@@ -3,13 +3,13 @@
 
    <div class="container">
 
-    <h1>Crud mongo</h1>
+    <h1>Virtual Traveler</h1>
 
     <a
         class="btn btn-success w-100 my-4"  
-        href="/mascotas/crear"
+        href="/api/empresa/crear"
     >
-        Crear nueva Mascota
+        Crear nueva Reserva
     </a>
 
 
@@ -18,26 +18,41 @@
         <thead>
           <tr>
             <th scope="col">#</th>
+            <th scope="col">Destino</th>
             <th scope="col">Nombre</th>
-            <th scope="col">Descripcion</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Telefono</th>
+            <th scope="col">Email</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Hora</th>
+            <th scope="col">Asiento</th>
             <th scope="col">Accion</th>
           </tr>
         </thead>
         <tbody>
 
-            <% if (arrayMascotas.length>0) { %>
-                <% arrayMascotas.forEach(mascota => { %>
+            <% if (result.length>0) { %>
+                <% result.forEach(reserva => { %>
                     
                     <tr>
-                        <th scope="row"><%= mascota.id  %></th>
-                        <td><%= mascota.nombre  %> </td>
-                        <td><%= mascota.descripcion  %> </td>
-                        <td><a href="mascotas/<%=mascota.id%>"
-                            class="btn btn-warning btn-sm"
+                        <th scope="row"><%= reserva.id  %></th>
+                        
+                        <td><%= reserva.destino  %> </td>
+                        <td><%= reserva.nombre  %> </td>
+                        <td><%= reserva.apellido  %> </td>
+                        <td><%= reserva.telefono  %> </td>
+                        <td><%= reserva.email  %> </td>
+                        <td><%= reserva.fecha  %> </td>
+                        <td><%= reserva.hora  %> </td>
+                        <td><%= reserva.asiento  %> </td>
+                        <td><a href="/api/empresa/<%=reserva.id%>"
+                            class="btn btn-danger btn-sm"
                         >
-                        Editar
+                        Borrar
                         </a>
-                    </td>
+                      
+
+                    
                     </tr>
                          
                 <% }) %>

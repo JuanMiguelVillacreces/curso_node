@@ -1,7 +1,7 @@
 <%- include("template/cabecera", {tituloWeb: 'Crear nueva mascota'}) %>
     <div class="container">
     <h1>Crear</h1>
-    <form action="/mascotas"method="POST">
+    <form action="crear"method="POST">
         <input
             type="text"
             placeholder="Agregar nombre"
@@ -10,10 +10,40 @@
         >
         <input
             type="text"
-            placeholder="Agregar descripcion"
+            placeholder="Agregar Apellido"
             class="form-control my-2"
-            name="descripcion"
+            name="apellido"
         >
+        <input
+        type="text"
+        placeholder="Agregar destino"
+        class="form-control my-2"
+        name="destino"
+    >
+    <input
+    type="text"
+    placeholder="Agregar Fecha"
+    class="form-control my-2"
+    name="fecha"
+>
+<input
+type="text"
+placeholder="Agregar Hora"
+class="form-control my-2"
+name="hora"
+>
+<input
+type="text"
+placeholder="Agregar Telefono"
+class="form-control my-2"
+name="telefono"
+>
+<input
+type="text"
+placeholder="Agregar Email"
+class="form-control my-2"
+name="email"
+>
         <button
             class="btn btn-success w-100"  
             type="submit"  

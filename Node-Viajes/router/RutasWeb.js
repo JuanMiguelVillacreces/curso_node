@@ -1,30 +1,23 @@
 const express = require('express')
+//import fetch from 'node-fetch';
 const fetch = require('node-fetch')
 const router = express.Router();
 const colors = require('colors');
 const Reserva= require('../models/reserva')
-
-const Mascota= require('../models/mascota')
+const { restart } = require('nodemon');
+const { json } = require('express/lib/response');
 
 
 router.get('/', async (req, res, next) => {
 
-    const urlBtcInfo = 'http://localhost:8081/api/empresa/get'
-    
-    //const urlBtcInfo = 'https://www.google.com'
+    const urlBtcInfo = 'http://localhost:8081/api/empresa/get/'
 
     try {
-
-
-        fetch(urlBtcInfo) .then(res => res.text()) .then(text => console.log(text));
-
-      //  const request = await fetch(urlBtcInfo)
-        //const result = await request.json()
-        //console.log(request.destino)
-       // result.asiento
-       // console.log('BTC last: ', result.payload.last.rainbow)
-      //  res.status(200).send(request)
-        console.log("Estoy dentro")
+        const request = await fetch(urlBtcInfo)
+        const result = await request.json()
+        console.log(result)
+        res.render('../views/reserva.ejs',{result})
+       // console.log("Estoy dentro")
     } catch (error) {
 
         res.status(400).send(error)
@@ -33,27 +26,66 @@ router.get('/', async (req, res, next) => {
 
 })
 
-// router.get('/get',async(req,res)=>{
+router.get('/crear', async (req, res, next) => {
 
-//     try{
-
-//         const arrayMascotasDB = await Mascota.find()
-//         //console.log(arrayMascotasDB)
-        
-//         res.render("mascotas",{
-//            // arrayMascotas : arrayMascotasDB
-//             arrayMascotas:[
-//                 {id:'uno',nombre:'rex',descripcion:'algo'},
-//                 {id:'dos',nombre:'aaa',descripcion:'algo'}
-//             ]
-//         })
-
-//     } catch (error){
-//         console.log(error)
-//     }
+res.render('../views/crear.ejs')
+   
+})
 
 
+router.post('/crear',async(req,res)=>{
+    
+    
+    
+   // const urlBtcInfo = 'http://localhost:8081/api/empresa/'
+    console.log(req.body)
   
-// })
+      try{ 
+        const request = await fetch("http://localhost:8081/api/empresa/", {
+            method: "POST",
+            headers: {
+                "Content-Type" : "application/json",
+                "Accept" : "*/*"
+            } ,
+            body:JSON.stringify( 
+                {
+                    fecha: req.body.fecha,
+                    destino:  req.body.destino,
+                    hora:  req.body.hora,
+                    nombre:  req.body.nombre,
+                    apellido:  req.body.apellido,
+                    telefono:  req.body.telefono,
+                    email: req.body.email
+                }),
+            
+            
+        
+        })
+
+        res.redirect('/api/empresa')
+
+        console.log(request);}
+        catch(error){
+            console.log(error)
+        } 
+
+})
+
+
+router.get('/:id', async (req,res)=>{
+
+    const id= req.params.id
+
+    try {
+      
+        const request = await fetch("http://localhost:8081/api/empresa/delete/"+id,{
+            method:"DELETE"
+        })  
+        res.redirect('/api/empresa')
+
+    } catch (error) {
+        console.log(error)
+    }
+})
 
 module.exports = router;
