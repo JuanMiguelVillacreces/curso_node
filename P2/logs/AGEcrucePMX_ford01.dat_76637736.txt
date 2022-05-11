@@ -1,0 +1,27 @@
+INICIO EJECUCION: Algoritmo AGEcrucePMX
+ - Nombre del fichero: 
+ - Semilla utilizada: 76637736
+Coste Final AGEcrucePMX: 3843.0
+Solucion AGEcrucePMX:
+ - solucionPMX[0] = 1
+ - solucionPMX[1] = 15
+ - solucionPMX[2] = 14
+ - solucionPMX[3] = 16
+ - solucionPMX[4] = 8
+ - solucionPMX[5] = 13
+ - solucionPMX[6] = 17
+ - solucionPMX[7] = 18
+ - solucionPMX[8] = 10
+ - solucionPMX[9] = 5
+ - solucionPMX[10] = 0
+ - solucionPMX[11] = 12
+ - solucionPMX[12] = 3
+ - solucionPMX[13] = 4
+ - solucionPMX[14] = 6
+ - solucionPMX[15] = 7
+ - solucionPMX[16] = 9
+ - solucionPMX[17] = 19
+ - solucionPMX[18] = 11
+ - solucionPMX[19] = 2
+Tiempo de Ejecucion: 189 ms
+

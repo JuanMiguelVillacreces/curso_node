@@ -1,0 +1,37 @@
+INICIO EJECUCION: Algoritmo AGGcrucePMX
+ - Nombre del fichero: 
+ - Semilla utilizada: 73676637
+Coste Final AGGcrucePMX: 188930.0
+Solucion AGGcrucePMX:
+ - solucionAGGcrucePMX[0] = 10
+ - solucionAGGcrucePMX[1] = 18
+ - solucionAGGcrucePMX[2] = 14
+ - solucionAGGcrucePMX[3] = 6
+ - solucionAGGcrucePMX[4] = 4
+ - solucionAGGcrucePMX[5] = 19
+ - solucionAGGcrucePMX[6] = 12
+ - solucionAGGcrucePMX[7] = 23
+ - solucionAGGcrucePMX[8] = 27
+ - solucionAGGcrucePMX[9] = 2
+ - solucionAGGcrucePMX[10] = 11
+ - solucionAGGcrucePMX[11] = 0
+ - solucionAGGcrucePMX[12] = 28
+ - solucionAGGcrucePMX[13] = 17
+ - solucionAGGcrucePMX[14] = 26
+ - solucionAGGcrucePMX[15] = 29
+ - solucionAGGcrucePMX[16] = 9
+ - solucionAGGcrucePMX[17] = 13
+ - solucionAGGcrucePMX[18] = 16
+ - solucionAGGcrucePMX[19] = 21
+ - solucionAGGcrucePMX[20] = 22
+ - solucionAGGcrucePMX[21] = 5
+ - solucionAGGcrucePMX[22] = 7
+ - solucionAGGcrucePMX[23] = 3
+ - solucionAGGcrucePMX[24] = 20
+ - solucionAGGcrucePMX[25] = 25
+ - solucionAGGcrucePMX[26] = 15
+ - solucionAGGcrucePMX[27] = 1
+ - solucionAGGcrucePMX[28] = 24
+ - solucionAGGcrucePMX[29] = 8
+Tiempo de Ejecucion: 63 ms
+

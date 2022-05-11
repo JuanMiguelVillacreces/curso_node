@@ -1,0 +1,9 @@
+archivos=data/ford01.dat,data/ford02.dat,data/ford03.dat,data/ford04.dat,data/nissan01.dat,data/nissan02.dat,data/nissan03.dat,data/nissan04.dat
+semillas=77367663,73676637,36766377,67663773,76637736
+algoritmos=AGEcruceOx,AGEcrucePMX,AGGcrucePMX,AGGcruceOX2
+numerocromosomas=50
+cromosomasaleatorios=5
+probabilidadmutacion=0.001
+probabilidadcruce=0.7
+numevaluaciones=50000
+numiteraciones=1000

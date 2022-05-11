@@ -1,0 +1,37 @@
+INICIO EJECUCION: Algoritmo AGEcruceOX
+ - Nombre del fichero: 
+ - Semilla utilizada: 77367663
+Coste Final AGEcruceOX: 186960.0
+Solucion AGEcruceOX:
+ - AGEcruceOX[0] = 7
+ - AGEcruceOX[1] = 27
+ - AGEcruceOX[2] = 11
+ - AGEcruceOX[3] = 5
+ - AGEcruceOX[4] = 21
+ - AGEcruceOX[5] = 13
+ - AGEcruceOX[6] = 28
+ - AGEcruceOX[7] = 6
+ - AGEcruceOX[8] = 3
+ - AGEcruceOX[9] = 20
+ - AGEcruceOX[10] = 14
+ - AGEcruceOX[11] = 16
+ - AGEcruceOX[12] = 0
+ - AGEcruceOX[13] = 9
+ - AGEcruceOX[14] = 24
+ - AGEcruceOX[15] = 15
+ - AGEcruceOX[16] = 25
+ - AGEcruceOX[17] = 4
+ - AGEcruceOX[18] = 19
+ - AGEcruceOX[19] = 22
+ - AGEcruceOX[20] = 2
+ - AGEcruceOX[21] = 23
+ - AGEcruceOX[22] = 17
+ - AGEcruceOX[23] = 18
+ - AGEcruceOX[24] = 26
+ - AGEcruceOX[25] = 10
+ - AGEcruceOX[26] = 12
+ - AGEcruceOX[27] = 8
+ - AGEcruceOX[28] = 1
+ - AGEcruceOX[29] = 29
+Tiempo de Ejecucion: 399 ms
+

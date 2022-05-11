@@ -1,0 +1,27 @@
+INICIO EJECUCION: Algoritmo AGGcruceOX2
+ - Nombre del fichero: 
+ - Semilla utilizada: 76637736
+Coste Final AGGcruceOx2: 3870.0
+Solucion AGGcruceOx2:
+ - solucionAGGcruceOx2[0] = 17
+ - solucionAGGcruceOx2[1] = 13
+ - solucionAGGcruceOx2[2] = 0
+ - solucionAGGcruceOx2[3] = 8
+ - solucionAGGcruceOx2[4] = 5
+ - solucionAGGcruceOx2[5] = 10
+ - solucionAGGcruceOx2[6] = 2
+ - solucionAGGcruceOx2[7] = 1
+ - solucionAGGcruceOx2[8] = 3
+ - solucionAGGcruceOx2[9] = 4
+ - solucionAGGcruceOx2[10] = 15
+ - solucionAGGcruceOx2[11] = 7
+ - solucionAGGcruceOx2[12] = 14
+ - solucionAGGcruceOx2[13] = 19
+ - solucionAGGcruceOx2[14] = 9
+ - solucionAGGcruceOx2[15] = 18
+ - solucionAGGcruceOx2[16] = 12
+ - solucionAGGcruceOx2[17] = 11
+ - solucionAGGcruceOx2[18] = 6
+ - solucionAGGcruceOx2[19] = 16
+Tiempo de Ejecucion: 83 ms
+
